@@ -26,3 +26,15 @@ No dependencies! Jiiihaaa :tada:
 - `npm run css`: Builds CSS
 - `npm run watch`: Watches for changes in JS and SASS
 - `npm test`: Runs ESLint and Karma
+
+## Rebuild
+
+using node@10.19.0
+npm install rimraf
+npm install node-sass
+npm install webpack
+npm install babel-loader
+npm install babel-core
+npm install add-module-exports
+npm install babel-plugin-add-module-exports
+npm install babel-preset-es2015

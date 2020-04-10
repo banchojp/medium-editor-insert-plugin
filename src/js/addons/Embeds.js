@@ -1,7 +1,8 @@
 export default class Embeds {
 
-	constructor(plugin, options) {
-		this._plugin = plugin;
+  constructor(plugin, options, MediumEditor) {
+    this.MediumEditor = MediumEditor
+    this._plugin = plugin;
         this._editor = this._plugin.base;
 
 		this.options = {
