@@ -1,4 +1,4 @@
-# Insert extension for MediumEditor
+# Insert extension for MediumEditor modified for use with Vue2
 
 Vanilla ES2015 (transpiled with Babel) extension for MediumEditor. Extend your favorite editor with images and embeded videos and social media.
 
@@ -7,34 +7,18 @@ No dependencies! Jiiihaaa :tada:
 ## Usage
 
 ```html
-<link href="dist/css/medium-editor-insert.css" rel="stylesheet">
-
-<script src="dist/js/medium-editor-insert.js"></script>
+import 'medium-editor-insert-plugin-for-vue2/dist/css/medium-editor-insert.css'
 
 <script>
-    var editor = new MediumEditor('.editable', {
+  data () {
+    const MediumEditorInsert = require('medium-editor-insert-plugin-for-vue2/dist/js/medium-editor-insert.js').get(
+      editor.MediumEditor
+    )
+    return {
+      content: '',
+      options: {
+...
         extensions: {
-            'insert': new MediumEditorInsert()
+          insert: new MediumEditorInsert()
         }
-    });
-</script>
 ```
-
-## Development
-
-- `npm run build`: Builds everything
-- `npm run css`: Builds CSS
-- `npm run watch`: Watches for changes in JS and SASS
-- `npm test`: Runs ESLint and Karma
-
-## Rebuild
-
-using node@10.19.0
-npm install rimraf
-npm install node-sass
-npm install webpack
-npm install babel-loader
-npm install babel-core
-npm install add-module-exports
-npm install babel-plugin-add-module-exports
-npm install babel-preset-es2015
