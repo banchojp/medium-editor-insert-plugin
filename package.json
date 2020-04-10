@@ -1,13 +1,13 @@
 {
   "name": "medium-editor-insert-plugin-for-vue2",
-  "version": "0.0.2",
-  "description": "Insert extension for MediumEditor",
+  "version": "0.0.3",
+  "description": "Insert extension for MediumEditor modified for use with Vue2",
   "main": "dist/js/medium-editor-insert.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/orthes/medium-editor-insert.git"
+    "url": "git+https://github.com/banchojp/medium-editor-insert-plugin.git"
   },
-  "author": "Pavel Linkesch (http://linkesch.com)",
+  "author": "Kyoichi Ozaki",
   "license": "MIT",
   "scripts": {
     "build": "npm run clean && npm run build:dev && npm run build:prod",
@@ -62,9 +62,9 @@
     "webpack": "^1.15.0"
   },
   "bugs": {
-    "url": "https://github.com/orthes/medium-editor-insert/issues"
+    "url": "https://github.com/banchojp/medium-editor-insert-plugin/issues"
   },
-  "homepage": "https://github.com/orthes/medium-editor-insert#readme",
+  "homepage": "https://github.com/banchojp/medium-editor-insert-plugin#readme",
   "directories": {
     "example": "examples"
   },
